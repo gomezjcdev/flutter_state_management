@@ -15,7 +15,6 @@ class TodoService {
       if (response.statusCode != 200) {
         throw body;
       }
-      print(body);
       return List.from(body.map((item) => Todo.fromMap(item)));
     } catch (err, t) {
       print(err);
@@ -34,7 +33,6 @@ class TodoService {
       if (response.statusCode != 200) {
         throw body;
       }
-      print(body);
       return Todo.fromMap(body);
     } catch (err, t) {
       print(err);

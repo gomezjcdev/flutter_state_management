@@ -42,3 +42,10 @@ class Todo {
     );
   }
 }
+
+class UpdateTodoParams {
+  final String id;
+  final Map<String, dynamic> params;
+
+  UpdateTodoParams({required this.id, required this.params});
+}
